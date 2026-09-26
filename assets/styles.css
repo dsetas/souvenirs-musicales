@@ -1,17 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f2ed;
-  color: #2d2926;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3e352f;
+
+  background:
+    linear-gradient(
+      rgba(255, 248, 240, 0.88),
+      rgba(255, 236, 220, 0.94)
+    );
 }
 
 main {
-  max-width: 520px;
+  width: 100%;
+  max-width: 540px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 14px 40px;
 }
 
-h1 {
+#recuerdo {
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 20px 50px rgba(91, 67, 50, 0.18);
+}
+
+
+/* IMAGEN PRINCIPAL */
+
+#imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* CONTENIDO */
+
+.contenido {
+  padding: 28px 24px 32px;
   text-align: center;
+}
+
+#subtitulo {
+  margin: 0 0 8px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  color: #c47568;
+}
+
+#titulo {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 42px;
+  font-weight: normal;
+
+  color: #553d36;
+}
+
+#frase {
+  max-width: 360px;
+
+  margin: 14px auto 22px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-style: italic;
+
+  line-height: 1.5;
+
+  color: #8a6257;
+}
+
+
+/* ONDA MUSICAL */
+
+.onda {
+  margin: 18px 0;
+
+  font-size: 26px;
+  letter-spacing: 5px;
+
+  color: #d88a79;
+}
+
+
+/* REPRODUCTOR */
+
+#reproductor {
+  width: 100%;
+
+  margin: 8px 0 22px;
+}
+
+
+/* BOTONES */
+
+#descargar,
+#botonLetra {
+  width: 100%;
+
+  display: block;
+
+  margin: 12px 0;
+
+  padding: 14px 20px;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+#descargar {
+  color: white;
+
+  background: #bc7165;
+
+  border: 2px solid #bc7165;
+}
+
+#botonLetra {
+  color: #9d5d52;
+
+  background: white;
+
+  border: 2px solid #dca093;
+}
+
+#descargar:hover {
+  background: #a65f55;
+}
+
+#botonLetra:hover {
+  background: #fff3ef;
+}
+
+
+/* LETRA */
+
+#seccionLetra {
+  margin-top: 25px;
+
+  padding: 22px 18px;
+
+  text-align: left;
+
+  background: #fff8f4;
+
+  border-radius: 20px;
+}
+
+#seccionLetra h2 {
+  text-align: center;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  color: #79534a;
+}
+
+#letra {
+  white-space: pre-line;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #4c403b;
+}
+
+
+/* DEDICATORIA */
+
+footer {
+  margin-top: 28px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #ead7cf;
+}
+
+#dedicatoria {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 18px;
+
+  line-height: 1.5;
+
+  color: #755249;
+}
+
+#fecha {
+  margin-top: 8px;
+
+  font-size: 14px;
+
+  color: #a68e85;
+}
+
+
+/* TELÉFONOS */
+
+@media (max-width: 480px) {
+
+  main {
+    padding: 0;
+  }
+
+  #recuerdo {
+    border-radius: 0;
+  }
+
+  .contenido {
+    padding: 25px 20px 32px;
+  }
+
+  #titulo {
+    font-size: 36px;
+  }
+
+  #frase {
+    font-size: 18px;
+  }
+
 }
