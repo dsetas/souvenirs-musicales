@@ -2,12 +2,84 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Souvenirs musicales</title>
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <title>Recuerdo musical</title>
+
+  <link rel="stylesheet"
+        href="assets/styles.css">
 </head>
 
 <body>
-  <h1>Souvenirs musicales</h1>
-  <p>Página principal en construcción.</p>
+
+  <main>
+
+    <section id="recuerdo">
+
+      <img
+        id="imagen"
+        src=""
+        alt="Ilustración del recuerdo">
+
+      <div class="contenido">
+
+        <p id="subtitulo"></p>
+
+        <h1 id="titulo">
+          Cargando...
+        </h1>
+
+        <p id="frase"></p>
+
+        <div class="onda">
+          ♪ ♪ ♪ ♪ ♪ ♪ ♪
+        </div>
+
+        <audio
+          id="reproductor"
+          controls>
+        </audio>
+
+        <a
+          id="descargar"
+          href=""
+          download>
+          Descargar canción
+        </a>
+
+        <button
+          id="botonLetra"
+          type="button">
+          Ver letra
+        </button>
+
+        <section
+          id="seccionLetra"
+          hidden>
+
+          <h2>Letra</h2>
+
+          <div id="letra"></div>
+
+        </section>
+
+        <footer>
+
+          <p id="dedicatoria"></p>
+
+          <p id="fecha"></p>
+
+        </footer>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="assets/app.js"></script>
+
 </body>
 </html>
