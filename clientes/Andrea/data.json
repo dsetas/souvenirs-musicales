@@ -1,0 +1,13 @@
+{
+  "titulo": "A Andrea",
+  "subtitulo": "Una canción para mi niña",
+  "frase": "Tu risa puede transportarme al espacio",
+  "imagen": "fondo.jpg",
+  "audio": "cancion.mp3",
+  "descarga": "cancion.mp3",
+  "botonDescarga": "Descargar canción",
+  "mostrarLetra": true,
+  "dedicatoria": "Para Andrea, con todo mi amor.",
+  "fecha": "",
+  "letra": "Aquí colocaremos la letra completa de la canción."
+}
