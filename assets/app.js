@@ -1,5 +1,5 @@
 const params = new URLSearchParams(window.location.search);
-const cliente = params.get("cliente") || "andrea";
+const cliente = params.get("cliente") || "Andrea";
 
 fetch(`clientes/${cliente}/data.json`)
   .then(respuesta => {
